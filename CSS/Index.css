@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    background-image: url('../Image/baniere.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    padding-left: 0; /* Coller l'image à gauche */
+    padding-right: 20px; /* Garder un peu d'espace à droite pour le menu */
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    gap: 20px; /* Espace entre l'image et le menu */
+}
+
+.image-containe {
+  width: 20%;
+  height: 100%; /* La hauteur s'ajustera automatiquement pour conserver les proportions */
+  display: block; /* Supprime l'espace en dessous de l'image */
+
+}
+
+nav {
+    display: flex; 
+}
+
+nav ul {
+    display: flex;
+    margin: 0; 
+    padding: 0;
+    list-style-type: none; 
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background: #000000;
+}
+
+main {
+    background-color: #000000;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox pour organiser les éléments */
+    flex-direction: column; /* Empile les éléments verticalement */
+    gap: 20px; /* Espace entre les sections */
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+main h1 {
+    font-size: 36px;
+    color: #fff4f4;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.section-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7), -3px -3px 5px rgba(0, 0, 0, 0.7), 3px -3px 5px rgba(0, 0, 0, 0.7), -3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.milieu-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #000;
+    color: white;
+    padding: 40px 0; /* espace interne */
+    width: 100%;
+    font-size: 28px;
+}
+
+.colonne {
+    max-width: 500px;
+}
+
+.colonne.gauche {
+    width: 35%;
+    margin-left: 60px; /* Distance du bord gauche */
+    text-align: left;
+}
+
+.colonne.droite {
+    width: 35%;
+    margin-right: 60px; /* Distance du bord droit */
+    text-align: left;
+}
+
+.colonne h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.colonne ol li,
+.colonne ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-left .logo {
+  width: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.footer-left .section {
+  margin-bottom: 20px;
+}
+
+.footer-left h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #FFD700;
+}
+
+.footer-middle .footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle .footer-links li {
+  margin-bottom: 30px;
+}
+
+.footer-middle .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-middle .footer-links a:hover,
+.footer-middle .footer-links .active {
+  color: #FFD700;
+}
+
+.footer-right h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-right .highlight {
+  color: #FFD700;
+}
+
+.soumission-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.soumission-form .row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.soumission-form input,
+.soumission-form select,
+.soumission-form textarea {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.soumission-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.soumission-form .upload {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+.soumission-form button {
+  background-color: #81817f;
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.soumission-form button:hover {
+  background-color: #FFD700;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+.signature strong {
+  color: #ffcc00;
+}
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+/* Petits écrans en dessous de 480px (portrait) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 32px; /* Réduit la taille du titre */
+        padding: 5px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical */
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+        margin: 0;
+    }
+
+    main h1 {
+        font-size: 28px;
+    }
+
+    main p {
+        font-size: 14px;
+    }
+
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Mode paysage (petits écrans < 768px) */
+@media (max-width: 768px) and (orientation: landscape) {
+    header {
+        flex-direction: row;
+        height: auto;
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu horizontal en paysage */
+        justify-content: space-around;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 12px;
+    }
+    
+    footer {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
