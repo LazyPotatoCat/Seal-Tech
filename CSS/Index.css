@@ -266,49 +266,6 @@ main p {
     margin-right: 15px;
 }
 
-/* Petits écrans en dessous de 480px (portrait) */
- header {
-    height: 100px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-  }
-
-  .image-containe {
-    width: 50%;
-    height: auto;
-  }
-
-  /* milieux-page empilé */
-  .milieu-page {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 10px;
-  }
-
-  .colonne {
-    width: 90%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  /* footer empilé */
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px 10px;
-  }
-
-  .footer-left,
-  .footer-middle,
-  .footer-right {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-}
-
 @media (max-width: 480px) {
   /* Header plus compact */
   header {
@@ -391,3 +348,4 @@ main p {
     width: 100%;
   }
 }
+
