@@ -310,10 +310,6 @@ main p {
 }
 
 
-/* -------------------
-   Tablettes paysage - max 768px
-------------------- */
-@media (max-width: 768px) and (orientation: landscape) {
   @media (max-width: 480px) {
   /* Header plus petit et centré */
   header {
@@ -367,6 +363,7 @@ main p {
         width: 100%;
     }
 }
+
 
 
 
