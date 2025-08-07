@@ -230,78 +230,135 @@ main h1 {
 /* Petits écrans en dessous de 480px (portrait) */
 @media (max-width: 480px) {
     header {
+        height: 150px;
+        font-size: 18px;
         flex-direction: column;
-        height: auto;
+        justify-content: center;
+        gap: 10px;
         text-align: center;
+        padding-right: 0;
     }
 
-    header h1 {
-        font-size: 32px; /* Réduit la taille du titre */
-        padding: 5px;
+    .image-containe {
+        width: 50%;
+        height: auto;
     }
 
     nav ul {
-        flex-direction: column; /* Menu vertical */
-        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .milieu-page {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .colonne {
+        width: 90%;
+        margin: 0 auto 20px auto;
         text-align: center;
     }
 
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    main {
-        padding: 10px;
-        margin: 0;
-    }
-
-    main h1 {
+    .colonne h2 {
         font-size: 28px;
-    }
-
-    main p {
-        font-size: 14px;
-    }
-
-
-    footer {
-        font-size: 12px;
-    }
-}
-
-/* Mode paysage (petits écrans < 768px) */
-@media (max-width: 768px) and (orientation: landscape) {
-    header {
-        flex-direction: row;
-        height: auto;
-        padding: 5px;
-    }
-
-    header h1 {
-        font-size: 28px;
-        padding: 5px;
-    }
-
-    nav ul {
-        flex-direction: column; /* Menu horizontal en paysage */
-        justify-content: space-around;
-    }
-
-    main {
-        padding: 10px;
-        margin: 10px auto;
     }
 
     main h1 {
         font-size: 24px;
     }
 
-    main p {
-        font-size: 12px;
+    main p,
+    .colonne li {
+        font-size: 14px;
     }
-    
-    footer {
-        font-size: 12px;
-        padding: 5px;
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        width: 90%;
+    }
+
+    .soumission-form .row {
+        flex-direction: column;
+    }
+
+    .soumission-form input,
+    .soumission-form select,
+    .soumission-form textarea {
+        width: 100%;
+    }
+}
+
+
+/* -------------------
+   Tablettes paysage - max 768px
+------------------- */
+@media (max-width: 768px) and (orientation: landscape) {
+    header {
+        height: 180px;
+        font-size: 22px;
+        flex-wrap: wrap;
+        padding-right: 10px;
+    }
+
+    .image-containe {
+        width: 30%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .milieu-page {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .colonne {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .colonne h2 {
+        font-size: 32px;
+    }
+
+    .colonne li {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        width: 100%;
+    }
+
+    .soumission-form .row {
+        flex-direction: column;
+    }
+
+    .soumission-form input,
+    .soumission-form select,
+    .soumission-form textarea {
+        width: 100%;
     }
 }
