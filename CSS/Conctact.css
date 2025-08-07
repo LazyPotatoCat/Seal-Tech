@@ -259,79 +259,71 @@ main p {
 
 /* Petits écrans en dessous de 480px (portrait) */
 @media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-    }
+  .contact-info {
+    padding: 20px 15px;
+    font-size: 18px;
+    max-width: 100%;
+    width: 95%;
+    border-radius: 12px;
+  }
 
-    header h1 {
-        font-size: 32px; /* Réduit la taille du titre */
-        padding: 5px;
-    }
+  .contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
 
-    nav ul {
-        flex-direction: column; /* Menu vertical */
-        padding: 0;
-        text-align: center;
-    }
+  .facebook-icon {
+    width: 28px;
+    height: 28px;
+    margin-top: 15px;
+  }
 
-    nav ul li {
-        margin: 10px 0;
-    }
+  nav ul li {
+    margin-left: 5px;
+  }
 
-    main {
-        padding: 10px;
-        margin: 0;
-    }
+  nav a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
 
-    main h1 {
-        font-size: 28px;
-    }
-
-    main p {
-        font-size: 14px;
-    }
-
-
-    footer {
-        font-size: 12px;
-    }
+  main h1 {
+    font-size: 28px;
+    padding: 0 10px;
+  }
 }
 
-/* Mode paysage (petits écrans < 768px) */
-@media (max-width: 768px) and (orientation: landscape) {
-    header {
-        flex-direction: row;
-        height: auto;
-        padding: 5px;
-    }
+/* Pour écrans entre 481px et 768px en mode paysage */
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-info {
+    padding: 25px 30px;
+    font-size: 20px;
+    max-width: 90%;
+    width: 90%;
+    border-radius: 14px;
+  }
 
-    header h1 {
-        font-size: 28px;
-        padding: 5px;
-    }
+  .contact-info p {
+    font-size: 20px;
+    margin: 12px 0;
+  }
 
-    nav ul {
-        flex-direction: column; /* Menu horizontal en paysage */
-        justify-content: space-around;
-    }
+  .facebook-icon {
+    width: 32px;
+    height: 32px;
+    margin-top: 18px;
+  }
 
-    main {
-        padding: 10px;
-        margin: 10px auto;
-    }
+  nav ul li {
+    margin-left: 8px;
+  }
 
-    main h1 {
-        font-size: 24px;
-    }
+  nav a {
+    padding: 9px 12px;
+    font-size: 16px;
+  }
 
-    main p {
-        font-size: 12px;
-    }
-    
-    footer {
-        font-size: 12px;
-        padding: 5px;
-    }
+  main h1 {
+    font-size: 32px;
+  }
 }
