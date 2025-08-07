@@ -297,79 +297,114 @@ button:hover {
 
 /* Petits écrans en dessous de 480px (portrait) */
 @media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-    }
+  header {
+    flex-direction: column;
+    height: 160px;
+    font-size: 18px;
+    padding-right: 10px;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 
-    header h1 {
-        font-size: 32px; /* Réduit la taille du titre */
-        padding: 5px;
-    }
+  .image-containe {
+    width: 60%;
+    height: auto;
+  }
 
-    nav ul {
-        flex-direction: column; /* Menu vertical */
-        padding: 0;
-        text-align: center;
-    }
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
 
-    nav ul li {
-        margin: 10px 0;
-    }
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
 
-    main {
-        padding: 10px;
-        margin: 0;
-    }
+  main h2 {
+    font-size: 24px;
+  }
 
-    main h1 {
-        font-size: 28px;
-    }
+  .form-container {
+    padding: 20px;
+    max-width: 100%;
+  }
 
-    main p {
-        font-size: 14px;
-    }
+  .form-container h2 {
+    font-size: 28px;
+  }
 
+  .form-container input[type="text"],
+  .form-container input[type="tel"],
+  .form-container select,
+  .form-container textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
 
-    footer {
-        font-size: 12px;
-    }
+  .soumission-form .row {
+    flex-direction: column;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
-/* Mode paysage (petits écrans < 768px) */
+/* --------- Tablette paysage - max 768px --------- */
 @media (max-width: 768px) and (orientation: landscape) {
-    header {
-        flex-direction: row;
-        height: auto;
-        padding: 5px;
-    }
+  header {
+    height: 180px;
+    font-size: 22px;
+    padding-right: 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    header h1 {
-        font-size: 28px;
-        padding: 5px;
-    }
+  .image-containe {
+    width: 30%;
+    height: auto;
+  }
 
-    nav ul {
-        flex-direction: column; /* Menu horizontal en paysage */
-        justify-content: space-around;
-    }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
 
-    main {
-        padding: 10px;
-        margin: 10px auto;
-    }
+  main h2 {
+    font-size: 30px;
+  }
 
-    main h1 {
-        font-size: 24px;
-    }
+  .form-container {
+    max-width: 90%;
+    padding: 25px;
+  }
 
-    main p {
-        font-size: 12px;
-    }
-    
-    footer {
-        font-size: 12px;
-        padding: 5px;
-    }
+  .form-container h2 {
+    font-size: 32px;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="tel"],
+  .form-container select,
+  .form-container textarea {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .soumission-form .row {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 12px;
+  }
 }
