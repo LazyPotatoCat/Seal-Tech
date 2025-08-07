@@ -350,70 +350,70 @@ main p {
 }
 
 @media (max-width: 1024px) and (min-width: 769px) and (orientation: landscape) {
-  /* Header : réduire un peu la hauteur et espacement */
+  /* Header réduit */
   header {
-    height: 180px;
-    padding: 10px 20px;
+    height: 140px;           /* un peu moins haut */
+    padding: 15px 30px;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
   }
 
   .image-containe {
-    width: 30%;
+    width: 80%;
     height: auto;
   }
 
   nav ul {
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 15px;
     justify-content: flex-start;
   }
 
   nav ul li a {
-    font-size: 16px;
-    padding: 8px 12px;
+    font-size: 18px;         /* un peu plus gros */
+    padding: 10px 15px;
   }
 
-  /* Milieu-page côte à côte, mais moins large que desktop */
+  /* Milieu-page côte à côte avec plus de largeur */
   .milieu-page {
     flex-direction: row;
     justify-content: space-around;
-    padding: 20px 40px;
-    gap: 20px;
+    padding: 30px 50px;
+    gap: 30px;
   }
 
   .colonne {
-    width: 45%;
-    font-size: 18px;
+    width: 48%;              /* colonnes plus larges */
+    font-size: 20px;
   }
 
   .colonne h2 {
-    font-size: 26px;
+    font-size: 32px;         /* titres plus gros */
   }
 
   main h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
-  /* Footer */
+  /* Footer plus large */
   .footer-container {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 30px 40px;
+    padding: 40px 50px;
   }
 
   .footer-left,
   .footer-middle,
   .footer-right {
-    width: 30%;
+    width: 32%;              /* un peu plus large */
     margin-bottom: 0;
   }
 
   .soumission-form .row {
     flex-direction: row;
-    gap: 15px;
+    gap: 20px;
   }
 
   .soumission-form input,
@@ -423,6 +423,7 @@ main p {
     flex: 1;
   }
 }
+
 
 
 
