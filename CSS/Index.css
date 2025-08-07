@@ -349,87 +349,105 @@ main p {
   }
 }
 
-@media (max-width: 1024px) and (min-width: 769px) and (orientation: landscape) {
+@media (min-width: 768px) and (orientation: landscape) {
+  /* Agrandir le header */
   header {
-    height: 140px;
-    padding: 15px 30px;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+    height: 300px;
+    padding: 20px;
   }
 
-  .image-containe {
-    width: 25%;   /* taille plus raisonnable */
-    height: auto;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: flex-start;
+  header img.image-containe {
+    height: 100px;
   }
 
   nav ul li a {
-    font-size: 18px;
-    padding: 10px 15px;
+    font-size: 20px;
+    padding: 0 15px;
   }
 
+  /* Section Pourquoi/Comment plus gros */
   .milieu-page {
     flex-direction: row;
-    justify-content: space-around;
-    padding: 30px 50px;
-    gap: 30px;
-  }
-
-  .colonne {
-    width: 48%;
+    gap: 50px;
+    padding: 40px;
     font-size: 20px;
   }
 
-  .colonne h2 {
-    font-size: 32px;
+  .milieu-page h2 {
+    font-size: 28px;
   }
 
-  main h1 {
-    font-size: 30px;
+  .milieu-page li {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 
+  /* Footer responsive */
   .footer-container {
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 40px 50px;
+    padding: 40px;
+    gap: 30px;
   }
 
-  .footer-left,
-  .footer-middle,
-  .footer-right {
-    width: 32%;
-    margin-bottom: 0;
-  }
-
-    .soumission-form {
-    width: 100%;
-  }
-
-  .soumission-form .row {
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .soumission-form input,
-  .soumission-form select,
-  .soumission-form textarea {
-    font-size: 18px;
-    width: 100%; /* ou width: auto; selon ton besoin */
+  .footer-left, .footer-middle, .footer-right {
     flex: 1;
   }
 
-  .soumission-form label {
+  .footer-left .section h4,
+  .footer-middle a,
+  .footer-right h3 {
     font-size: 18px;
   }
+
+  /* Formulaire plus large */
+  .soumission-form {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .soumission-form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .soumission-form input,
+  .soumission-form textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .soumission-form textarea {
+    height: 120px;
+    resize: vertical;
+  }
+
+  .soumission-form label {
+    margin-top: 10px;
+    display: block;
+    font-size: 16px;
+  }
+
+  .soumission-form button {
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
 }
+
+
 
 
 
