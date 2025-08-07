@@ -349,69 +349,65 @@ main p {
   }
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
-  /* Agrandir le header */
+@media (min-width: 768px) {
+  /* Header */
   header {
-    height: 300px;
+    height: 180px;
     padding: 20px;
   }
 
-  header img.image-containe {
-    height: 100px;
+  .image-containe {
+    width: 25%;
+    height: auto;
+  }
+
+  nav ul {
+    gap: 20px;
   }
 
   nav ul li a {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0 15px;
   }
 
-  /* Section Pourquoi/Comment plus gros */
+  /* Milieu de la page */
   .milieu-page {
     flex-direction: row;
-    gap: 50px;
+    gap: 40px;
     padding: 40px;
+  }
+
+  .colonne {
+    width: 45%;
     font-size: 20px;
   }
 
-  .milieu-page h2 {
-    font-size: 28px;
+  .colonne h2 {
+    font-size: 30px;
   }
 
-  .milieu-page li {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  /* Footer responsive */
+  /* Footer */
   .footer-container {
-    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px;
-    gap: 30px;
   }
 
-  .footer-left, .footer-middle, .footer-right {
-    flex: 1;
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 30%;
   }
 
-  .footer-left .section h4,
-  .footer-middle a,
-  .footer-right h3 {
-    font-size: 18px;
+  .footer-left .section,
+  .footer-middle ul,
+  .footer-right form {
+    margin-bottom: 20px;
   }
 
-  /* Formulaire plus large */
   .soumission-form {
     width: 100%;
-    font-size: 18px;
-  }
-
-  .soumission-form .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
   }
 
   .soumission-form input,
@@ -419,36 +415,28 @@ main p {
     width: 100%;
     font-size: 16px;
     padding: 10px;
+    margin-bottom: 10px;
     box-sizing: border-box;
   }
 
-  .soumission-form textarea {
-    height: 120px;
-    resize: vertical;
-  }
-
-  .soumission-form label {
-    margin-top: 10px;
-    display: block;
-    font-size: 16px;
-  }
-
   .soumission-form button {
-    margin-top: 15px;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 20px;
-    cursor: pointer;
+    width: 100%;
+  }
+
+  .radio-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
   }
 
   .footer-bottom {
     text-align: center;
+    padding: 20px;
     font-size: 14px;
-    padding: 10px;
   }
 }
-
-
-
 
 
 
