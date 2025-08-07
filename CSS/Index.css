@@ -314,42 +314,36 @@ main p {
    Tablettes paysage - max 768px
 ------------------- */
 @media (max-width: 768px) and (orientation: landscape) {
-    header {
-        height: 180px;
-        font-size: 22px;
-        flex-wrap: wrap;
-        padding-right: 10px;
-    }
+  @media (max-width: 480px) {
+  /* Header plus petit et centré */
+  header {
+    height: 100px;          /* réduit la hauteur */
+    flex-direction: column; /* empile logo + nav */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
 
-    .image-containe {
-        width: 30%;
-        height: auto;
-    }
+  .image-containe {
+    width: 50%;
+    height: auto;
+  }
 
-    nav ul {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+  /* Milieu-page : deux colonnes côte à côte en ligne avec scroll horizontal si besoin */
+  .milieu-page {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto;      /* scroll horizontal si débordement */
+    gap: 20px;
+    padding: 10px;
+  }
 
-    .milieu-page {
-        flex-direction: column;
-        padding: 30px 20px;
-        gap: 30px;
-    }
-
-    .colonne {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .colonne h2 {
-        font-size: 32px;
-    }
-
-    .colonne li {
-        font-size: 16px;
-    }
+  .colonne {
+    min-width: 200px;      /* largeur minimale pour que ça reste lisible */
+    flex-shrink: 0;        /* ne pas rétrécir */
+    text-align: left;      /* texte aligné à gauche */
+    margin-bottom: 0;      /* supprimer marge verticale */
+  }
 
     .footer-container {
         flex-direction: column;
@@ -373,5 +367,6 @@ main p {
         width: 100%;
     }
 }
+
 
 
