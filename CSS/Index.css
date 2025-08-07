@@ -350,9 +350,8 @@ main p {
 }
 
 @media (max-width: 1024px) and (min-width: 769px) and (orientation: landscape) {
-  /* Header réduit */
   header {
-    height: 140px;           /* un peu moins haut */
+    height: 140px;
     padding: 15px 30px;
     flex-direction: row;
     align-items: center;
@@ -360,7 +359,7 @@ main p {
   }
 
   .image-containe {
-    width: 80%;
+    width: 25%;   /* taille plus raisonnable */
     height: auto;
   }
 
@@ -371,11 +370,10 @@ main p {
   }
 
   nav ul li a {
-    font-size: 18px;         /* un peu plus gros */
+    font-size: 18px;
     padding: 10px 15px;
   }
 
-  /* Milieu-page côte à côte avec plus de largeur */
   .milieu-page {
     flex-direction: row;
     justify-content: space-around;
@@ -384,19 +382,18 @@ main p {
   }
 
   .colonne {
-    width: 48%;              /* colonnes plus larges */
+    width: 48%;
     font-size: 20px;
   }
 
   .colonne h2 {
-    font-size: 32px;         /* titres plus gros */
+    font-size: 32px;
   }
 
   main h1 {
     font-size: 30px;
   }
 
-  /* Footer plus large */
   .footer-container {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -407,22 +404,33 @@ main p {
   .footer-left,
   .footer-middle,
   .footer-right {
-    width: 32%;              /* un peu plus large */
+    width: 32%;
     margin-bottom: 0;
+  }
+
+    .soumission-form {
+    width: 100%;
   }
 
   .soumission-form .row {
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
   }
 
   .soumission-form input,
   .soumission-form select,
   .soumission-form textarea {
-    width: auto;
+    font-size: 18px;
+    width: 100%; /* ou width: auto; selon ton besoin */
     flex: 1;
   }
+
+  .soumission-form label {
+    font-size: 18px;
+  }
 }
+
 
 
 
