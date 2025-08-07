@@ -309,9 +309,6 @@ main p {
   }
 }
 
-
-  @media (max-width: 480px) {
-  /* Header plus petit et centré */
 @media (max-width: 480px) {
   /* Header plus compact */
   header {
@@ -395,6 +392,7 @@ main p {
         width: 100%;
     }
 }
+
 
 
 
