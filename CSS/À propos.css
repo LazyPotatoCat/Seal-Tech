@@ -227,20 +227,20 @@ main h1 {
 }
 
 
-/* Petits écrans en dessous de 480px (portrait) */
 @media (max-width: 480px) {
     header {
-        height: 150px;
-        font-size: 18px;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 10px;
+        height: 160px;
+        font-size: 18px;
         text-align: center;
-        padding-right: 0;
+        gap: 10px;
+        padding-right: 10px;
     }
 
     .image-containe {
-        width: 50%;
+        width: 60%;
         height: auto;
     }
 
@@ -250,29 +250,15 @@ main h1 {
         gap: 5px;
     }
 
-    .milieu-page {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 10px;
-    }
-
-    .colonne {
-        width: 90%;
-        margin: 0 auto 20px auto;
-        text-align: center;
-    }
-
-    .colonne h2 {
-        font-size: 28px;
-    }
-
     main h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
-    main p,
-    .colonne li {
-        font-size: 14px;
+    main p {
+        font-size: 16px;
+        padding: 15px;
+        max-width: 100%;
+        margin: 0 10px;
     }
 
     .footer-container {
@@ -284,7 +270,7 @@ main h1 {
     .footer-left,
     .footer-middle,
     .footer-right {
-        width: 90%;
+        width: 100%;
     }
 
     .soumission-form .row {
@@ -298,16 +284,17 @@ main h1 {
     }
 }
 
-
-/* -------------------
-   Tablettes paysage - max 768px
-------------------- */
+/* ------------------------------------------
+   Tablettes en mode paysage - max 768px
+------------------------------------------ */
 @media (max-width: 768px) and (orientation: landscape) {
     header {
+        flex-wrap: wrap;
         height: 180px;
         font-size: 22px;
-        flex-wrap: wrap;
-        padding-right: 10px;
+        justify-content: space-between;
+        gap: 15px;
+        padding-right: 15px;
     }
 
     .image-containe {
@@ -320,24 +307,15 @@ main h1 {
         gap: 10px;
     }
 
-    .milieu-page {
-        flex-direction: column;
-        padding: 30px 20px;
-        gap: 30px;
+    main h1 {
+        font-size: 28px;
     }
 
-    .colonne {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .colonne h2 {
-        font-size: 32px;
-    }
-
-    .colonne li {
-        font-size: 16px;
+    main p {
+        font-size: 18px;
+        padding: 18px;
+        margin: 0 20px;
+        max-width: 95%;
     }
 
     .footer-container {
