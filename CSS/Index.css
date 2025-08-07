@@ -347,7 +347,83 @@ main p {
   .soumission-form textarea {
     width: 90%;
   }
+
+@media (max-width: 1024px) and (min-width: 769px) and (orientation: landscape) {
+  /* Header : réduire un peu la hauteur et espacement */
+  header {
+    height: 180px;
+    padding: 10px 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .image-containe {
+    width: 30%;
+    height: auto;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  /* Milieu-page côte à côte, mais moins large que desktop */
+  .milieu-page {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 40px;
+    gap: 20px;
+  }
+
+  .colonne {
+    width: 45%;
+    font-size: 18px;
+  }
+
+  .colonne h2 {
+    font-size: 26px;
+  }
+
+  main h1 {
+    font-size: 28px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 30%;
+    margin-bottom: 0;
+  }
+
+  .soumission-form .row {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .soumission-form input,
+  .soumission-form select,
+  .soumission-form textarea {
+    width: auto;
+    flex: 1;
+  }
 }
+
+
 
 
 
