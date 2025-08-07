@@ -367,34 +367,27 @@ main p {
   main h1 {
     font-size: 18px;
   }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 100%;
+  }
+
+  .soumission-form .row {
+    flex-direction: column;
+  }
+
+  .soumission-form input,
+  .soumission-form select,
+  .soumission-form textarea {
+    width: 100%;
+  }
 }
-
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left,
-    .footer-middle,
-    .footer-right {
-        width: 100%;
-    }
-
-    .soumission-form .row {
-        flex-direction: column;
-    }
-
-    .soumission-form input,
-    .soumission-form select,
-    .soumission-form textarea {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
