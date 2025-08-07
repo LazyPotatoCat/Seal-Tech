@@ -347,6 +347,7 @@ main p {
   .soumission-form textarea {
     width: 90%;
   }
+}
 
 @media (max-width: 1024px) and (min-width: 769px) and (orientation: landscape) {
   /* Header : réduire un peu la hauteur et espacement */
@@ -422,6 +423,7 @@ main p {
     flex: 1;
   }
 }
+
 
 
 
