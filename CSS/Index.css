@@ -312,9 +312,11 @@ main p {
 
   @media (max-width: 480px) {
   /* Header plus petit et centré */
+@media (max-width: 480px) {
+  /* Header plus compact */
   header {
-    height: 100px;          /* réduit la hauteur */
-    flex-direction: column; /* empile logo + nav */
+    height: auto;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
@@ -325,21 +327,51 @@ main p {
     height: auto;
   }
 
-  /* Milieu-page : deux colonnes côte à côte en ligne avec scroll horizontal si besoin */
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  /* Milieu-page côte à côte */
   .milieu-page {
     display: flex !important;
     flex-direction: row !important;
-    overflow-x: auto;      /* scroll horizontal si débordement */
-    gap: 20px;
+    overflow-x: auto;
+    gap: 10px;
     padding: 10px;
   }
 
   .colonne {
-    min-width: 200px;      /* largeur minimale pour que ça reste lisible */
-    flex-shrink: 0;        /* ne pas rétrécir */
-    text-align: left;      /* texte aligné à gauche */
-    margin-bottom: 0;      /* supprimer marge verticale */
+    min-width: 220px;
+    flex-shrink: 0;
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 0;
   }
+
+  .colonne h2 {
+    font-size: 18px;
+  }
+
+  .colonne li,
+  .colonne p {
+    font-size: 13px;
+  }
+
+  main h1 {
+    font-size: 18px;
+  }
+}
+
 
     .footer-container {
         flex-direction: column;
@@ -363,6 +395,7 @@ main p {
         width: 100%;
     }
 }
+
 
 
 
