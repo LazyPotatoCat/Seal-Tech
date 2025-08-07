@@ -349,94 +349,72 @@ main p {
   }
 }
 
-@media (min-width: 768px) {
-  /* Header */
-  header {
-    height: 180px;
-    padding: 20px;
-  }
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    header {
+        height: 180px;
+    }
 
-  .image-containe {
-    width: 25%;
-    height: auto;
-  }
+    header img.image-containe {
+        height: 100px;
+        width: auto;
+    }
 
-  nav ul {
-    gap: 20px;
-  }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
 
-  nav ul li a {
-    font-size: 18px;
-    padding: 0 15px;
-  }
+    nav ul li {
+        margin: 5px 10px;
+    }
 
-  /* Milieu de la page */
-  .milieu-page {
-    flex-direction: row;
-    gap: 40px;
-    padding: 40px;
-  }
+    .milieu-page {
+        flex-direction: row;
+        gap: 20px;
+        padding: 10px;
+    }
 
-  .colonne {
-    width: 45%;
-    font-size: 20px;
-  }
+    .colonne.gauche, .colonne.droite {
+        font-size: 1.1em;
+        flex: 1;
+    }
 
-  .colonne h2 {
-    font-size: 30px;
-  }
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
 
-  /* Footer */
-  .footer-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 40px;
-  }
+    .footer-left, .footer-middle, .footer-right {
+        flex: 1 1 30%;
+        font-size: 1em;
+    }
 
-  .footer-left,
-  .footer-middle,
-  .footer-right {
-    width: 30%;
-  }
+    .soumission-form input,
+    .soumission-form textarea {
+        font-size: 1em;
+        padding: 10px;
+    }
 
-  .footer-left .section,
-  .footer-middle ul,
-  .footer-right form {
-    margin-bottom: 20px;
-  }
+    .soumission-form .row {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-  .soumission-form {
-    width: 100%;
-  }
+    .soumission-form button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
 
-  .soumission-form input,
-  .soumission-form textarea {
-    width: 100%;
-    font-size: 16px;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-  }
-
-  .soumission-form button {
-    font-size: 18px;
-    padding: 10px 20px;
-    width: 100%;
-  }
-
-  .radio-group {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
-  .footer-bottom {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-  }
+    .footer-bottom {
+        font-size: 0.9em;
+        text-align: center;
+    }
 }
+
+
 
 
 
