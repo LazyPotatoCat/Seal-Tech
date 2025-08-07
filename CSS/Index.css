@@ -345,8 +345,9 @@ main p {
   .soumission-form input,
   .soumission-form select,
   .soumission-form textarea {
-    width: 100%;
+    width: 90%;
   }
 }
+
 
 
