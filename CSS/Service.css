@@ -393,28 +393,14 @@ section p {
     }
 
     main h1 {
-        font-size: 30px;
-    }
-
-    main p {
-        font-size: 16px;
-        padding: 20px;
-        margin: 0 20px;
-        max-width: 95%;
-    }
-
-    section h3 {
         font-size: 24px;
-    }
-
-    section p {
-        font-size: 17px;
+        text-align: center;
     }
 
     .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 18px;
-        padding: 20px 8px;
+        grid-template-columns: 1fr; /* Une seule colonne */
+        gap: 20px;
+        padding: 20px 10px;
     }
 
     .service-card-content h3 {
@@ -422,7 +408,7 @@ section p {
     }
 
     .service-card-content p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .footer-container {
@@ -458,5 +444,6 @@ section p {
         text-align: center;
     }
 }
+
 
 
