@@ -259,6 +259,32 @@ main p {
 
 /* Petits écrans en dessous de 480px (portrait) */
 @media (max-width: 480px) {
+    header {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .image-containe {
+    width: 50%;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
   .contact-info {
     padding: 20px 15px;
     font-size: 18px;
@@ -291,10 +317,49 @@ main p {
     font-size: 28px;
     padding: 0 10px;
   }
+    .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 100%;
+  }
+
+  .soumission-form .row {
+    flex-direction: column;
+  }
+
+  .soumission-form input,
+  .soumission-form select,
+  .soumission-form textarea {
+    width: 90%;
+  }
 }
 
 /* Pour écrans entre 481px et 768px en mode paysage */
 @media (min-width: 481px) and (max-width: 768px) {
+    header {
+        height: 180px;
+    }
+
+    header img.image-containe {
+        height: 100px;
+        width: auto;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
   .contact-info {
     padding: 25px 30px;
     font-size: 20px;
@@ -326,4 +391,38 @@ main p {
   main h1 {
     font-size: 32px;
   }
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        flex: 1 1 30%;
+        font-size: 1em;
+    }
+
+    .soumission-form input,
+    .soumission-form textarea {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .soumission-form .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .soumission-form button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.9em;
+        text-align: center;
+    }
 }
+
+
