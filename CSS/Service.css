@@ -406,6 +406,11 @@ section p {
     .service-card-content h3 {
         font-size: 18px;
     }
+    .service-card img {
+        height: 35vh; /* 35% de la hauteur de l’écran */
+    }
+}
+
 
     .service-card-content p {
         font-size: 14px;
@@ -444,6 +449,7 @@ section p {
         text-align: center;
     }
 }
+
 
 
 
