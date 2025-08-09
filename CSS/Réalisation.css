@@ -336,27 +336,32 @@ main p {
 
 /* Petits écrans en dessous de 480px (portrait) */
 @media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        height: 160px;
-        font-size: 18px;
-        padding-right: 10px;
-        gap: 10px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
+  header {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
 
-    .image-containe {
-        width: 60%;
-        height: auto;
-    }
+  .image-containe {
+    width: 50%;
+    height: auto;
+  }
 
-    nav ul {
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-    }
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
 
     main h1 {
         font-size: 24px;
@@ -400,6 +405,27 @@ main p {
         max-width: 300px;
         height: auto;
     }
+    .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 100%;
+  }
+
+  .soumission-form .row {
+    flex-direction: column;
+  }
+
+  .soumission-form input,
+  .soumission-form select,
+  .soumission-form textarea {
+    width: 90%;
+  }
 }
 
 /* ------------------------------
@@ -408,22 +434,21 @@ main p {
 @media (max-width: 768px) and (orientation: landscape) {
     header {
         height: 180px;
-        font-size: 22px;
-        padding-right: 15px;
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
-    .image-containe {
-        width: 30%;
-        height: auto;
+    header img.image-containe {
+        height: 100px;
+        width: auto;
     }
 
     nav ul {
         flex-wrap: wrap;
-        gap: 10px;
         justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
     }
 
     main h1 {
@@ -478,4 +503,37 @@ main p {
         max-width: 400px;
         height: 300px;
     }
+     .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        flex: 1 1 30%;
+        font-size: 1em;
+    }
+
+    .soumission-form input,
+    .soumission-form textarea {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .soumission-form .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .soumission-form button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.9em;
+        text-align: center;
+    }
 }
+
