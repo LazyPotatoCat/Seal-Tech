@@ -357,25 +357,24 @@ button:hover {
 
 /* --------- Tablette paysage - max 768px --------- */
 @media (max-width: 768px) and (orientation: landscape) {
-  header {
-    height: 180px;
-    font-size: 22px;
-    padding-right: 15px;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+header {
+        height: 180px;
+    }
 
-  .image-containe {
-    width: 30%;
-    height: auto;
-  }
+    header img.image-containe {
+        height: 100px;
+        width: auto;
+    }
 
-  nav ul {
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
 
   main h2 {
     font-size: 30px;
@@ -407,4 +406,38 @@ button:hover {
     font-size: 15px;
     padding: 12px;
   }
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        flex: 1 1 30%;
+        font-size: 1em;
+    }
+
+    .soumission-form input,
+    .soumission-form textarea {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .soumission-form .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .soumission-form button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.9em;
+        text-align: center;
+    }
 }
+}
+
